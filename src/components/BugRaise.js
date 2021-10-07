@@ -88,7 +88,8 @@ export const BugRaise = () => {
         var LEVdropDown = document.getElementById("level");
       LEVdropDown.selectedIndex = 0;
 
-     
+      setTimeout(() => 
+      { history.push("/customer-bug-list")}, 6000 ); 
       } else {
         e.stopPropagation();
         formEl.current.classList.add("was-validated");

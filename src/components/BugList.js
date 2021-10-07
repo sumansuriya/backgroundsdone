@@ -47,6 +47,7 @@ export const BugList = () => {
             <th scope="col">Raised Date</th>
             <th scope="col">Bug Status</th>
             <th scope="col">Bug Solution</th>
+            <th scope="col">Customer Id</th>
             <th scope="col">Customer Name</th>
             <th scope="col">Project Name</th>
             <th scope="col">Staff Name</th>
@@ -65,6 +66,7 @@ export const BugList = () => {
               <td>{item.bugRaisedDate}</td>
               <td>{item.bugStatus}</td>
               <td>{item.bugSolution}</td>
+              <td>{item.customer.customerId}</td>
               <td>{item.customer.name}</td>
               <td>{item.project.projectName}</td>       
               <td> {item.staff.name} </td> 

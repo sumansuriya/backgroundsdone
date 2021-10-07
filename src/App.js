@@ -29,6 +29,8 @@ import { CustomerProfileUpdate } from "./components/CustomerUpdate";
 import { ProjectList } from "./components/ProjectList";
 import { ProjectUpsert } from "./components/ProjectUpsert";
 import { AdminLogin } from "./components/AdminLogin";
+import StartPage from "./components/StartPage";
+import NavigateLogin from "./components/NavigateLogin";
 
 function App() {
   const history = useHistory();
@@ -46,7 +48,8 @@ function App() {
   return (
     <>
       {/* {authSuccessFromStorage === "1" } */}
-
+      <Route exact path="/" component={StartPage} />
+      <Route exact path="/login" component={NavigateLogin} />
       <Route exact path="/staff-add" component={StaffAdd} />
       <Route exact path="/staff-list" component={StaffList} />
       <Route exact path="/staff-profile-update" component={StaffProfileUpdate} />
@@ -70,6 +73,7 @@ function App() {
       <Route exact path="/project-upsert" component={ProjectUpsert} />
 
       <Route exact path="/admin-login" component={AdminLogin} />
+      
       
       </>
   );
